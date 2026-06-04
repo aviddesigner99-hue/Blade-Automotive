@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blade Automotive | Premium Vehicle Bodywork & Accident Repair</title>
+    <!-- Google Fonts: Oswald for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slateDark: '#0F172A',
+                        safetyAmber: '#F59E0B',
+                        safetyAmberHover: '#D97706',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        oswald: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A;
+        }
+    </style>
+</head>
+<body class="text-slate-100 min-h-screen flex flex-col selection:bg-amber-500 selection:text-slate-900">
+
+    <!-- NAVIGATION HEADER -->
+    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Typography Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="font-oswald text-2xl font-bold tracking-wider text-white">
+                        BLADE <span class="text-safetyAmber">AUTOMOTIVE</span>
+                    </span>
+                </div>
+
+                <!-- Call-to-Action / Navigation Info -->
+                <div class="flex items-center gap-6 sm:gap-8">
+                    <!-- Prominent Bold Click-to-Call Phone Layout Block -->
+                    <a href="tel:07599495187" class="flex items-center gap-2.5 group">
+                        <div class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center group-hover:border-safetyAmber group-hover:bg-safetyAmber/10 transition-all duration-300">
+                            <svg class="w-5 h-5 text-safetyAmber group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </div>
+                        <div class="hidden md:flex flex-col text-left">
+                            <span class="text-xs text-slate-400 font-medium tracking-wide uppercase">Call Our Team</span>
+                            <span class="text-sm sm:text-base font-bold text-white tracking-wide group-hover:text-safetyAmber transition-colors">07599 495 187</span>
+                        </div>
+                    </a>
+
+                    <!-- Sharp Quote Button -->
+                    <a href="#quote" class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-semibold rounded-md text-slate-950 bg-safetyAmber hover:bg-safetyAmberHover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-safetyAmber transition-all duration-300 font-oswald tracking-wide uppercase">
+                        Get A Free Quote
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-b from-slate-950 via-slateDark to-slateDark overflow-hidden py-16 lg:py-24 border-b border-slate-800">
+        <!-- Background subtle glow elements -->
+        <div class="absolute top-1/4 left-1/10 w-96 h-96 bg-safetyAmber/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content: High-Impact Typography & CTAs -->
+                <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 self-center lg:self-start mb-6">
+                        <span class="flex h-2 w-2 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-safetyAmber opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-safetyAmber"></span>
+                        </span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Wythall's Premier Bodyshop & Garage</span>
+                    </div>
+
+                    <h1 class="font-oswald text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight text-white leading-tight mb-6">
+                        Professional Vehicle <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-safetyAmber to-yellow-400">Bodywork & Accident</span> <br>
+                        Repairs in Birmingham
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 font-light">
+                        Based in Wythall, Blade Automotive is your trusted local expert for bumper scuffs, deep scratch removal, dent repair, and complete accident refinishing. We restore your car to showroom standards with flawless precision.
+                    </p>
+
+                    <!-- Interactive Layout Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <!-- High-contrast Amber Filled Button -->
+                        <a href="#estimate" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-950 bg-safetyAmber hover:bg-safetyAmberHover rounded-md shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30 hover:-translate-y-0.5 transition-all duration-300 font-oswald tracking-wide uppercase">
+                            Free Digital Estimate
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                        <!-- Border Outline Button -->
+                        <a href="tel:07599495187" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-slate-950/40 hover:bg-slate-900 border border-slate-700 hover:border-slate-500 rounded-md hover:-translate-y-0.5 transition-all duration-300 font-oswald tracking-wide uppercase">
+                            Call Workshop
+                            <svg class="w-5 h-5 ml-2 text-safetyAmber" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Automotive Utility Showcase Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none group">
+                        <!-- Decorative glow backdrop -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-safetyAmber to-yellow-500 rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                        
+                        <div class="relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1200&auto=format&fit=crop" 
+                                 alt="Professional car paint detailing and refinishing at Blade Automotive" 
+                                 class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700 ease-out min-h-[300px]">
+                            
+                            <!-- Badges overlapping the image -->
+                            <div class="absolute bottom-4 left-4 bg-slate-950/90 backdrop-blur-sm border border-slate-800 rounded-lg p-3.5 flex items-center gap-3">
+                                <div class="w-8 h-8 rounded bg-safetyAmber/10 flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-safetyAmber" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] uppercase font-semibold tracking-wider text-slate-400">Guaranteed Work</p>
+                                    <p class="text-xs font-bold text-white">20+ Years Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- THE THREE PILLARS SERVICE GRID -->
+    <section class="py-20 lg:py-28 bg-slateDark relative border-b border-slate-800">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.02),transparent_60%)] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
+                <span class="text-xs font-bold tracking-widest text-safetyAmber uppercase">Core Expertise</span>
+                <h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-white mt-3 mb-6">
+                    Our Three Pillars of Excellence
+                </h2>
+                <div class="w-16 h-1 bg-safetyAmber mx-auto mb-6 rounded"></div>
+                <p class="text-slate-400 text-base sm:text-lg font-light leading-relaxed">
+                    We combine state-of-the-art repair technology with over two decades of hand-crafted experience to offer comprehensive, high-quality vehicle restoration.
+                </p>
+            </div>
+
+            <!-- Pillars Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Pillar Card 1: Precision Bodywork -->
+                <div class="bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/60 hover:border-safetyAmber/40 rounded-xl p-8 transition-all duration-300 group flex flex-col justify-between shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-safetyAmber group-hover:h-full transition-all duration-300"></div>
+                    <div>
+                        <!-- Icon wrapper -->
+                        <div class="w-14 h-14 rounded-lg bg-slate-900 border border-slate-700/60 flex items-center justify-center mb-8 group-hover:border-safetyAmber/40 group-hover:bg-safetyAmber/5 transition-all duration-300">
+                            <!-- SVG for Hammer/Anvil/Wrench / Car Bodywork -->
+                            <svg class="w-7 h-7 text-safetyAmber" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-oswald text-xl sm:text-2xl font-bold uppercase tracking-wide text-white mb-4 group-hover:text-safetyAmber transition-colors">
+                            Precision Bodywork & <br>Panel Repair
+                        </h3>
+                        <p class="text-slate-400 text-sm sm:text-base leading-relaxed font-light mb-6">
+                            From minor grocery trolley bumps to major collision impacts. Expert removal of scuffs, deep key scratches, bumper cracks, and complete replacement of unrepairable steel or aluminum panels.
+                        </p>
+                    </div>
+                    <ul class="space-y-3 border-t border-slate-700/40 pt-6">
+                        <li class="flex items-center text-xs text-slate-300">
+                            <svg class="w-4 h-4 text-safetyAmber mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Bumper Scuff & Plastic Welding
+                        </li>
+                        <li class="flex items-center text-xs text-slate-300">
+                            <svg class="w-4 h-4 text-safetyAmber mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Dent Pulling & Shaping
+                        </li>
+                        <li class="flex items-center text-xs text-slate-300">
+                            <svg class="w-4 h-4 text-safetyAmber mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Complete Panel Replacement
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pillar Card 2: Professional Re-spraying -->
+                <div class="bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/60 hover:border-safetyAmber/40 rounded-xl p-8 transition-all duration-300 group flex flex-col justify-between shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-safetyAmber group-hover:h-full transition-all duration-300"></div>
+                    <div>
+                        <!-- Icon wrapper -->
+                        <div class="w-14 h-14 rounded-lg bg-slate-900 border border-slate-700/60 flex items-center justify-center mb-8 group-hover:border-safetyAmber/40 group-hover:bg-safetyAmber/5 transition-all duration-300">
+                            <!-- SVG for Paint Spray Gun / Paint -->
+                            <svg class="w-7 h-7 text-safetyAmber" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-oswald text-xl sm:text-2xl font-bold uppercase tracking-wide text-white mb-4 group-hover:text-safetyAmber transition-colors">
+                            Professional Re-spraying & Alloys
+                        </h3>
+                        <p class="text-slate-400 text-sm sm:text-base leading-relaxed font-light mb-6">
+                            Full panel custom resprays and scuff-to-OEM paint matching using an advanced spectrophotometer color matching computer. Premium alloy wheel scraping and gouge refurbishment.
+                        </p>
+                    </div>
+                    <ul class="space-y-3 border-t border-slate-700/40 pt-6">
+                        <li class="flex items-center text-xs text-slate-300">
+                            <svg class="w-4 h-4 text-safetyAmber mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Computerized Color Matching
+                        </li>
+                        <li class="flex items-center text-xs text-slate-300">
+                            <svg class="w-4 h-4 text-safetyAmber mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Alloy Wheel Refurbishment & Color Coding
+                        </li>
+                        <li class="flex items-center text-xs text-slate-300">
+                            <svg class="w-4 h-4 text-safetyAmber mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Custom Re-Spraying & Clear Coat Restoration
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pillar Card 3: MOT Mechanical Repairs -->
+                <div class="bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/60 hover:border-safetyAmber/40 rounded-xl p-8 transition-all duration-300 group flex flex-col justify-between shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-0 bg-safetyAmber group-hover:h-full transition-all duration-300"></div>
+                    <div>
+                        <!-- Icon wrapper -->
+                        <div class="w-14 h-14 rounded-lg bg-slate-900 border border-slate-700/60 flex items-center justify-center mb-8 group-hover:border-safetyAmber/40 group-hover:bg-safetyAmber/5 transition-all duration-300">
+                            <!-- SVG for Gear/Settings/Wrench -->
+                            <svg class="w-7 h-7 text-safetyAmber" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-oswald text-xl sm:text-2xl font-bold uppercase tracking-wide text-white mb-4 group-hover:text-safetyAmber transition-colors">
+                            MOT Mechanical Repairs
+                        </h3>
+                        <p class="text-slate-400 text-sm sm:text-base leading-relaxed font-light mb-6">
+                            Beyond aesthetics. Our mechanical garage team performs heavy mechanical restoration: fail-item MOT repairs, clutch installations, complex suspension overhauls, and complete electronic diagnostics.
+                        </p>
+                    </div>
+                    <ul class="space-y-3 border-t border-slate-700/40 pt-6">
+                        <li class="flex items-center text-xs text-slate-300">
+                            <svg class="w-4 h-4 text-safetyAmber mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            MOT Failure Fixes & Brake Overhauls
+                        </li>
+                        <li class="flex items-center text-xs text-slate-300">
+                            <svg class="w-4 h-4 text-safetyAmber mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Clutch, Gearbox & Engine Diagnostics
+                        </li>
+                        <li class="flex items-center text-xs text-slate-300">
+                            <svg class="w-4 h-4 text-safetyAmber mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            General Servicing, Tyres & Suspension Tuning
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF & LOCAL AREA COVERAGE -->
+    <section class="py-20 lg:py-28 bg-slate-950 relative overflow-hidden border-b border-slate-800">
+        <!-- Abstract gradient background accent -->
+        <div class="absolute -right-1/4 top-1/4 w-96 h-96 bg-safetyAmber/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left: Premium Testimonial (Steve Byrne) -->
+                <div class="lg:col-span-7">
+                    <span class="text-xs font-bold tracking-widest text-safetyAmber uppercase block mb-4">Customer Success</span>
+                    <h2 class="font-oswald text-3xl sm:text-4xl font-black uppercase tracking-tight text-white mb-8">
+                        Proven Reputation on the Road
+                    </h2>
+
+                    <!-- Steve Byrne Card -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-10 shadow-2xl relative">
+                        <!-- Quote icon decoration -->
+                        <div class="absolute right-8 top-8 text-slate-800 pointer-events-none">
+                            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+
+                        <!-- 5 Star Rating -->
+                        <div class="flex items-center gap-1 mb-6">
+                            <svg class="w-5 h-5 text-safetyAmber" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.9 1.503-.9 1.803 0l1.242 3.823a1 1 0 00.95.69h4.018c.969 0 1.371 1.24.588 1.81l-3.251 2.362a1 1 0 00-.364 1.118l1.242 3.823c.3.9-.755 1.688-1.538 1.118l-3.251-2.362a1 1 0 00-1.197 0l-3.251 2.362c-.783.57-1.838-.218-1.538-1.118l1.242-3.823a1 1 0 00-.364-1.118L2.05 9.25c-.783-.57-.38-1.81.588-1.81h4.018a1 1 0 00.95-.69l1.242-3.823z"></path></svg>
+                            <svg class="w-5 h-5 text-safetyAmber" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.9 1.503-.9 1.803 0l1.242 3.823a1 1 0 00.95.69h4.018c.969 0 1.371 1.24.588 1.81l-3.251 2.362a1 1 0 00-.364 1.118l1.242 3.823c.3.9-.755 1.688-1.538 1.118l-3.251-2.362a1 1 0 00-1.197 0l-3.251 2.362c-.783.57-1.838-.218-1.538-1.118l1.242-3.823a1 1 0 00-.364-1.118L2.05 9.25c-.783-.57-.38-1.81.588-1.81h4.018a1 1 0 00.95-.69l1.242-3.823z"></path></svg>
+                            <svg class="w-5 h-5 text-safetyAmber" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.9 1.503-.9 1.803 0l1.242 3.823a1 1 0 00.95.69h4.018c.969 0 1.371 1.24.588 1.81l-3.251 2.362a1 1 0 00-.364 1.118l1.242 3.823c.3.9-.755 1.688-1.538 1.118l-3.251-2.362a1 1 0 00-1.197 0l-3.251 2.362c-.783.57-1.838-.218-1.538-1.118l1.242-3.823a1 1 0 00-.364-1.118L2.05 9.25c-.783-.57-.38-1.81.588-1.81h4.018a1 1 0 00.95-.69l1.242-3.823z"></path></svg>
+                            <svg class="w-5 h-5 text-safetyAmber" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.9 1.503-.9 1.803 0l1.242 3.823a1 1 0 00.95.69h4.018c.969 0 1.371 1.24.588 1.81l-3.251 2.362a1 1 0 00-.364 1.118l1.242 3.823c.3.9-.755 1.688-1.538 1.118l-3.251-2.362a1 1 0 00-1.197 0l-3.251 2.362c-.783.57-1.838-.218-1.538-1.118l1.242-3.823a1 1 0 00-.364-1.118L2.05 9.25c-.783-.57-.38-1.81.588-1.81h4.018a1 1 0 00.95-.69l1.242-3.823z"></path></svg>
+                            <svg class="w-5 h-5 text-safetyAmber" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.9 1.503-.9 1.803 0l1.242 3.823a1 1 0 00.95.69h4.018c.969 0 1.371 1.24.588 1.81l-3.251 2.362a1 1 0 00-.364 1.118l1.242 3.823c.3.9-.755 1.688-1.538 1.118l-3.251-2.362a1 1 0 00-1.197 0l-3.251 2.362c-.783.57-1.838-.218-1.538-1.118l1.242-3.823a1 1 0 00-.364-1.118L2.05 9.25c-.783-.57-.38-1.81.588-1.81h4.018a1 1 0 00.95-.69l1.242-3.823z"></path></svg>
+                        </div>
+
+                        <blockquote class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 italic">
+                            "Thanks for sorting the damage caused by the accident on my van, you did a very good job. I was very impressed with how quick & easy it was to organise the job from quote to finish. The collection and return of the van was straight forward and my down time was only two days which was brilliant as while it's off the road I do not earn any money."
+                        </blockquote>
+
+                        <div class="flex items-center gap-4 border-t border-slate-800 pt-6">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center border border-slate-700">
+                                <span class="font-oswald text-base font-bold text-white uppercase">SB</span>
+                            </div>
+                            <div>
+                                <cite class="not-italic font-bold text-white block text-sm sm:text-base">Steve Byrne</cite>
+                                <span class="text-xs text-slate-400 font-medium tracking-wide">Commercial Van Fleet Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Local Area Coverage SEO cloud -->
+                <div class="lg:col-span-5 flex flex-col justify-center">
+                    <span class="text-xs font-bold tracking-widest text-safetyAmber uppercase block mb-4">Service Territory</span>
+                    <h2 class="font-oswald text-3xl sm:text-4xl font-black uppercase tracking-tight text-white mb-6">
+                        Areas We Serve
+                    </h2>
+                    <p class="text-slate-400 font-light text-sm sm:text-base leading-relaxed mb-8">
+                        We provide premium vehicle collection, free digital estimates, and courtesy car dispatch within a 10-mile radius of our Wythall-based workshop.
+                    </p>
+
+                    <!-- SEO Tag-Cloud Grid -->
+                    <div class="flex flex-wrap gap-2.5">
+                        <div class="group cursor-pointer bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-safetyAmber/40 px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all duration-300 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-safetyAmber group-hover:scale-125 transition-transform"></span>
+                            Wythall
+                        </div>
+                        <div class="group cursor-pointer bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-safetyAmber/40 px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all duration-300 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-safetyAmber group-hover:scale-125 transition-transform"></span>
+                            Solihull
+                        </div>
+                        <div class="group cursor-pointer bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-safetyAmber/40 px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all duration-300 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-safetyAmber group-hover:scale-125 transition-transform"></span>
+                            Shirley
+                        </div>
+                        <div class="group cursor-pointer bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-safetyAmber/40 px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all duration-300 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-safetyAmber group-hover:scale-125 transition-transform"></span>
+                            Redditch
+                        </div>
+                        <div class="group cursor-pointer bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-safetyAmber/40 px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all duration-300 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-safetyAmber group-hover:scale-125 transition-transform"></span>
+                            Bromsgrove
+                        </div>
+                        <div class="group cursor-pointer bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-safetyAmber/40 px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all duration-300 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-safetyAmber group-hover:scale-125 transition-transform"></span>
+                            South Birmingham
+                        </div>
+                        <div class="group cursor-pointer bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-safetyAmber/40 px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all duration-300 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-safetyAmber group-hover:scale-125 transition-transform"></span>
+                            Earlswood
+                        </div>
+                        <div class="group cursor-pointer bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-safetyAmber/40 px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all duration-300 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-safetyAmber group-hover:scale-125 transition-transform"></span>
+                            Rubery
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONVERSION ENQUIRY FORM SECTION -->
+    <section id="estimate" class="py-20 lg:py-28 bg-slateDark relative border-b border-slate-800">
+        <!-- Anchor support for '#quote' -->
+        <span id="quote" class="absolute -top-20"></span>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(245,158,11,0.03),transparent_50%)] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-12 sm:mb-16">
+                <span class="text-xs font-bold tracking-widest text-safetyAmber uppercase">Fast Booking & Estimate</span>
+                <h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-white mt-3 mb-4">
+                    Get A Free Digital Estimate
+                </h2>
+                <p class="text-slate-400 font-light text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+                    Fill out the rapid response form below, or send photos of your vehicle damage directly to our WhatsApp on <a href="https://wa.me/447599495187" class="text-safetyAmber hover:underline font-semibold">07599 495187</a> for an immediate quote!
+                </p>
+            </div>
+
+            <!-- Conversion Form Card -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-10 lg:p-12 shadow-2xl relative">
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Full Name -->
+                        <div class="flex flex-col">
+                            <label for="name" class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe" 
+                                   class="bg-slate-950 border border-slate-800 focus:border-safetyAmber focus:ring-1 focus:ring-safetyAmber rounded-lg px-4 py-3.5 text-white placeholder-slate-600 text-sm outline-none transition-all duration-300">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="flex flex-col">
+                            <label for="phone" class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="07123 456 789" 
+                                   class="bg-slate-950 border border-slate-800 focus:border-safetyAmber focus:ring-1 focus:ring-safetyAmber rounded-lg px-4 py-3.5 text-white placeholder-slate-600 text-sm outline-none transition-all duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Vehicle Make/Model -->
+                    <div class="flex flex-col">
+                        <label for="vehicle" class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Vehicle Make / Model</label>
+                        <input type="text" id="vehicle" name="vehicle" required placeholder="e.g. Ford Transit, VW Golf" 
+                               class="bg-slate-950 border border-slate-800 focus:border-safetyAmber focus:ring-1 focus:ring-safetyAmber rounded-lg px-4 py-3.5 text-white placeholder-slate-600 text-sm outline-none transition-all duration-300">
+                    </div>
+
+                    <!-- Describe the Damage -->
+                    <div class="flex flex-col">
+                        <label for="damage" class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Describe the Damage</label>
+                        <textarea id="damage" name="damage" rows="4" required placeholder="Describe the scuff, dent, or repair needed. (e.g., bumper scrape on passenger side...)" 
+                                  class="bg-slate-950 border border-slate-800 focus:border-safetyAmber focus:ring-1 focus:ring-safetyAmber rounded-lg px-4 py-3.5 text-white placeholder-slate-600 text-sm outline-none transition-all duration-300 resize-none"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-2">
+                        <button type="submit" 
+                                class="w-full inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-950 bg-safetyAmber hover:bg-safetyAmberHover rounded-lg shadow-lg shadow-amber-500/10 hover:shadow-amber-500/20 transition-all duration-300 font-oswald tracking-wide uppercase cursor-pointer">
+                            Submit Estimate Request
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7M3 12h12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 py-12 lg:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <span class="font-oswald text-xl font-bold tracking-wider text-white">
+                        BLADE <span class="text-safetyAmber">AUTOMOTIVE</span>
+                    </span>
+                    <p class="text-sm font-light leading-relaxed text-slate-400">
+                        Premium vehicle accident repairs, scratch removals, custom respraying, and MOT diagnostics. Backed by 20+ years of local independent garage expertise.
+                    </p>
+                </div>
+
+                <!-- Operating Hours -->
+                <div class="space-y-4">
+                    <h4 class="font-oswald text-sm font-bold uppercase text-white tracking-wider">Workshop Hours</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li class="flex justify-between border-b border-slate-900 pb-2">
+                            <span>Monday - Friday</span>
+                            <span class="text-white font-medium">8:30 AM - 5:30 PM</span>
+                        </li>
+                        <li class="flex justify-between border-b border-slate-900 pb-2">
+                            <span>Saturday</span>
+                            <span class="text-white font-medium">9:00 AM - 1:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sunday</span>
+                            <span class="text-slate-500">Closed</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Address -->
+                <div class="space-y-4">
+                    <h4 class="font-oswald text-sm font-bold uppercase text-white tracking-wider">Our Location</h4>
+                    <address class="not-italic text-sm font-light text-slate-400 space-y-2">
+                        <p class="text-white font-semibold">Blade Automotive</p>
+                        <p>Unit 5, The Stables, Batemans Lane</p>
+                        <p>Wythall, South Birmingham, B47 6NG</p>
+                        <p class="pt-2">
+                            <span class="text-xs uppercase text-slate-500 block font-semibold">Primary Contact</span>
+                            <a href="tel:07599495187" class="text-safetyAmber font-bold text-base hover:underline">07599 495 187</a>
+                        </p>
+                    </address>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-light">
+                <p>&copy; 2026 Blade Automotive. All rights reserved. Independent Vehicle Bodywork, Accident Repair & MOT Garage.</p>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/blade_automotive/" target="_blank" rel="noopener noreferrer" class="hover:text-safetyAmber transition-colors flex items-center gap-1">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke-width="2"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2"></line>
+                        </svg>
+                        @blade_automotive
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
